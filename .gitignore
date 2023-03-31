@@ -1,0 +1,11 @@
+__pycache__
+*__pycache__*
+.idea
+*.idea*
+*.pyc
+.vscode
+venv
+*.wpr
+*.wpu
+!/.pytest_cache/
+!/tests/.pytest_cache/
