@@ -15,10 +15,10 @@ class MainPage(WebPage):
         super().__init__(web_driver, url)
 
     # Username field, default Username: Admin
-    username_field = WebElement(xpath="//input[@placeholder='Username']")
+    username_field = WebElement(css_selector="input[placeholder='Username']")
 
     # Password field, default Password: admin123
-    password_field = WebElement(xpath="//input[@placeholder='Password']")
+    password_field = WebElement(css_selector="input[placeholder='Password']")
 
     # forgot the password link
     forgot_password_link = WebElement(
