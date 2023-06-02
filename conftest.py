@@ -33,7 +33,7 @@ def pytest_runtest_make_report(item, call):
 @pytest.fixture
 def web_browser(request, selenium):
     browser = selenium
-    browser.set_window_size(1024, 768)
+    browser.set_window_size(1280, 768)
 
     # Return browser instance to a test case:
     yield browser
@@ -66,14 +66,14 @@ def web_browser(request, selenium):
 
 def get_test_case_docstring(item):
     """ 
-    This function gets doc string from a test case and format it
+    This function gets doc string from a test case and formats it
     to show this docstring instead of the test case name in reports.
     """
 
     full_name = ''
 
     if item._obj.__doc__:
-        # Remove extra whitespaces from the doc string:
+        # Remove extra space from the doc string:
         name = str(item._obj.__doc__.split('.')[0]).strip()
         full_name = ' '.join(name.split())
 
@@ -91,7 +91,7 @@ def get_test_case_docstring(item):
     return full_name
 
 
-def pytest_itemcollected(item):
+def pytest_item_collected(item):
     """ 
     This function modifies the names of test cases "on the fly"
     during the execution of test cases.
