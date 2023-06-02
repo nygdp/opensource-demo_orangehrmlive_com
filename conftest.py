@@ -20,7 +20,7 @@ def chrome_options(chrome_options):
 
 
 @pytest.hookimpl(hookwrapper=True, tryfirst=True)
-def pytest_runtest_makereport(item, call):
+def pytest_runtest_make_report(item, call):
     # This function helps to detect that some test failed
     # and pass this information to teardown:
 

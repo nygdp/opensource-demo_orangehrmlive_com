@@ -22,18 +22,18 @@ class MainPage(WebPage):
 
     # forgot the password link
     forgot_password_link = WebElement(
-        xpath='//p[@class=\'oxd-text oxd-text--p orangehrm-login-forgot-header\']')
+        xpath="//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']")
 
     # Submit button
-    login_button = WebElement(xpath='//button[@type=\'submit\']')
+    login_button = WebElement(xpath="//button[@type='submit']")
 
     # linkedin link
     linkedin_link = WebElement(
-        xpath='//a[@href=\'https://www.linkedin.com/company/orangehrm/mycompany/\']//*[name()=\'svg\']')
+        xpath="//a[@href='https://www.linkedin.com/company/orangehrm/mycompany/']//*[name()='svg']")
 
     # youtube channel link
     youtube_link = WebElement(
-        xpath='//a[@href=\'https://www.youtube.com/c/OrangeHRMInc\']//*[name()=\'svg\']')
+        xpath="//a[@href='https://www.youtube.com/c/OrangeHRMInc']//*[name()='svg']")
 
     # Dashboard page title
-    dashboard_title = WebElement(xpath='//*[contains(@title, \'OrangeHRM\')]')
+    dashboard_title = WebElement(xpath="//*[contains(@title, 'OrangeHRM')]")
